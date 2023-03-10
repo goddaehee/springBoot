@@ -15,4 +15,4 @@
 **Style**
  - use black theme
 
-<img src="https://tistory1.daumcdn.net/tistory/1994430/skin/images/bpm.PNG" width="800">
+<img src="https://img1.daumcdn.net/thumb/C32x32/?scode=mtistory2&amp;fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2F1994430%2F74cb0667c02241939c5c13ec5dd1afb1" width="30">
