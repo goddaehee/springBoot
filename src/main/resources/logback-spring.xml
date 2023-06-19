@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<property resource="properties/logback/logback-${spring.profiles.active}.properties"/>
+	<property name="ROOT_LOG_LEVEL" value="${log.root.level}" />
+	<property name="APP_NAME" value="${log.application.name}" />
+	<property name="STD_LOG_LEVEL" value="${log.stdout.level}" />
+	<property name="FILE_LOG_LEVEL" value="${log.file.level}" />
+	<property name="FILE_LOG_DIR" value="${log.file.dir}" />
+	<property name="LOG_STASH_LEVEL" value="${log.logstash.level}" />
+	<property name="LOG_MASKING_PATTERNS" value="${log.masking.patterns}" />
+
+	<!-- Configure the FIle appender -->
+	<include resource="properties/logback/logback-file-appender.xml" />
+
+	<!-- Configure the Console appender -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+	<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+		<level>${STD_LOG_LEVEL}</level>
+	</filter>
+	<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+		<layout class="gdh.api.arch.common.logger.mask.MaskingPatternLayout">
+			<maskPattern>${LOG_MASKING_PATTERNS}</maskPattern>
+			<pattern>[%d{ISO8601}] %-5level [%X{memId},%X{traceId:-},%X{spanId:-}] | %-10.10t | %-40.40logger{40} | %m%n</pattern>
+		</layout>
+	</encoder>
+	</appender>
+
+	<springProfile name="local">
+		<include resource="properties/logback/logback-spring-local.xml" />
+	</springProfile>
+</configuration>

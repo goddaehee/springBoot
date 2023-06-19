@@ -1,0 +1,32 @@
+#Server 설정
+server:
+  port: 8081
+
+jasypt:
+  encryptor:
+    bean: jasyptEncryptorAES
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  thymeleaf:
+    view-names: thymeleaf/*
+    check-template-location: true
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    mode: HTML
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: ENC(FFKeg6WA/NpWyEjY7eM98K95aQpfMj8fmDGtVJTUsPg8Kac0dFH7L+H9XTkQjWgNqXnDuFqJrOmV0VDPHeHB1oCl6v5JMRc4c+c3NW6hDvQH7QgaNZCMjGZUILwryqtO/mNvcUs+XT0G7g5g/liEMGTVm5/FX94hPOWZ6+5bPSw=)
+    username: ENC(eBLwEkin0S2m2JULNwz4c/qBM4EWrmM7JLgBJCK28fXSfKZXE1Tfe3fLBEXBOCKC)
+    password: ENC(DBKQ6eqINNvytuB0DCkd9DS50bWV6z32/f220NKtZRAb6MXH578HNfIEaq5RvMe4)
+#    url: ENC(GRQHOFovtdi+HUtrZG+5P20ng6vVItiCzwKXiSPgsSgr/TJFSCLUNZQG1lHewyn4YY4scZmCDrrW2jRJFX6hYuZ5x7yUq8LTSANWlN5LUWv5Q44SYBrAG/+9GA01vAzp)
+#    username: ENC(IsFUZMUfwmuDfqbl8MI8Cw==)
+#    password: ENC(bthE1smfcNDXzmEmKMxBc6l7dGW7AXiE)
+
+mybatis:
+  mapper-locations: mybatis/**/*.xml
+  #type-aliases-package: gdh.api.sample.vo

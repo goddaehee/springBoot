@@ -7,7 +7,7 @@
 |:--:|:--:|
 |Author|GDH|
 |SpringBoot|3.0.2|
-|Mysql|x.xxx|
+|Mysql|8.0.33|
 |Java|17|
 |grid|xxx|
 |referrence|[goddaehee.tistory.com](http://goddaehee.tistory.com/)
