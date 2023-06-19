@@ -1,17 +1,16 @@
-package lfcp.ui.ssr;
+package gdh.api;
 
-import de.codecentric.boot.admin.server.config.EnableAdminServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 //@EnableDiscoveryClient
-@EnableAdminServer
+//@EnableAdminServer
 //@EnableScheduling
-public class SsrApplication {
+public class ApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SsrApplication.class, args);
+		SpringApplication.run(ApiApplication.class, args);
 	}
 
 }

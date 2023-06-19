@@ -1,4 +1,4 @@
-package lfcp.ui.ssr.util;
+package gdh.api.util;
 
 import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
@@ -89,7 +89,7 @@ public class Encryptor
 //			String secretKey = args.length == 2 ? args[1] : null;
 			Encryptor aes = null;
 //			if (secretKey == null)
-				aes = new Encryptor();
+				aes = new Encryptor("!@#$%^&*()");
 //			else {
 //				aes = new Encryptor(secretKey);
 //			}
@@ -97,8 +97,10 @@ public class Encryptor
 			System.out.println(encryptedString);
 			String encryptedString2 = aes.encrypt("ORALSH");
 			System.out.println(encryptedString2);
-			String encryptedString3 = aes.encrypt("lfcq1");
+			String encryptedString3 = aes.decrypt("+3AciRwI3Aqe6JGDBR61H3hDvohtgi9P");
 			System.out.println(encryptedString3);
+		String encryptedString4 = aes.decrypt("rTcUE6ErL3PtHsaxepDtyw==");
+		System.out.println(encryptedString4);
 
 //		} else {
 //			System.out.println("USAGE: java AES string-to-encrypt [secretKey]");
