@@ -36,4 +36,14 @@ public class SampleController {
 
 		return "thymeleaf/sampleThymeleaf";
 	}
+
+	@GetMapping("/sampleLogTest")
+	public String sampleLogTest(Model model) throws Exception {
+		log.trace("Trace Level 테스트");
+		log.debug("DEBUG Level 테스트");
+		log.info("INFO Level 테스트");
+		log.warn("Warn Level 테스트");
+		log.error("ERROR Level 테스트");
+		throw new Exception("test Exception");
+	}
 }

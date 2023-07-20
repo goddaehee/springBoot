@@ -2,7 +2,7 @@
 <included>
 
 	<!-- Configure the FIle appender -->
-	<!--<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
 			<level>${FILE_LOG_LEVEL}</level>
 		</filter>
@@ -10,16 +10,16 @@
 			<fileNamePattern>${FILE_LOG_DIR}/${APP_NAME}_%d{yyyyMMdd}.log</fileNamePattern>
 			<maxHistory>5</maxHistory>
 		</rollingPolicy>
-		&lt;!&ndash;<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+		<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
 			<layout class="gdh.api.arch.common.logger.mask.MaskingPatternLayout">
 				<maskPattern>${LOG_MASKING_PATTERNS}</maskPattern>
 				<pattern>[%d{ISO8601}] %-5level [%X{memId},%X{traceId:-},%X{spanId:-}] | %-10.10t | %-40.40logger{40} | %m%n
 				</pattern>
 			</layout>
-		</encoder>&ndash;&gt;
-	</appender>-->
+		</encoder>
+	</appender>
 
-	<!--<appender name="FILE_COMMON" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	<appender name="FILE_COMMON" class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
 			<level>${FILE_LOG_LEVEL}</level>
 		</filter>
@@ -27,16 +27,16 @@
 			<fileNamePattern>${FILE_LOG_DIR}/common/${APP_NAME}_common_%d{yyyyMMdd}.log</fileNamePattern>
 			<maxHistory>5</maxHistory>
 		</rollingPolicy>
-		&lt;!&ndash;<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+		<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
 			<layout class="gdh.api.arch.common.logger.mask.MaskingPatternLayout">
 				<maskPattern>${LOG_MASKING_PATTERNS}</maskPattern>
 				<pattern>[%d{ISO8601}] %-5level [%X{memId},%X{traceId:-},%X{spanId:-}] | %-10.10t | %-40.40logger{40} | %m%n
 				</pattern>
 			</layout>
-		</encoder>&ndash;&gt;
-	</appender>-->
+		</encoder>
+	</appender>
 
-	<!--<appender name="FILE_MEMBER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	<appender name="FILE_MEMBER" class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
 			<level>${FILE_LOG_LEVEL}</level>
 		</filter>
@@ -44,12 +44,12 @@
 			<fileNamePattern>${FILE_LOG_DIR}/member/${APP_NAME}_member_%d{yyyyMMdd}.log</fileNamePattern>
 			<maxHistory>5</maxHistory>
 		</rollingPolicy>
-		&lt;!&ndash;<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+		<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
 			<layout class="gdh.api.arch.common.logger.mask.MaskingPatternLayout">
 			<maskPattern>${LOG_MASKING_PATTERNS}</maskPattern>
 				<pattern>[%d{ISO8601}] %-5level [%X{memId},%X{traceId:-},%X{spanId:-}] | %-10.10t | %-40.40logger{40} | %m%n
 				</pattern>
 			</layout>
-		</encoder>&ndash;&gt;
-	</appender>-->
+		</encoder>
+	</appender>
 </included>

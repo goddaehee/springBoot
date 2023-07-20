@@ -30,3 +30,9 @@ spring:
 mybatis:
   mapper-locations: mybatis/**/*.xml
   #type-aliases-package: gdh.api.sample.vo
+
+logging:
+  level:
+    root: info
+    gdh: debug
+

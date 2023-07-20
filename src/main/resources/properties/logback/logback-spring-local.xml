@@ -35,6 +35,10 @@
 		<appender-ref ref="FILE_COMMON"/>
 		<appender-ref ref="STDOUT" />
 	</logger>-->
+	<logger name="gdh.api" additivity="false" level="${FILE_LOG_LEVEL}">
+		<appender-ref ref="FILE_COMMON"/>
+		<appender-ref ref="STDOUT" />
+	</logger>
 	<root level="${ROOT_LOG_LEVEL}">
 		<appender-ref ref="STDOUT"/>
 		<appender-ref ref="FILE"/>
