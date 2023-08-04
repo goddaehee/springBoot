@@ -19,10 +19,17 @@ spring:
     cache: false
     mode: HTML
   datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: ENC(FFKeg6WA/NpWyEjY7eM98K95aQpfMj8fmDGtVJTUsPg8Kac0dFH7L+H9XTkQjWgNqXnDuFqJrOmV0VDPHeHB1oCl6v5JMRc4c+c3NW6hDvQH7QgaNZCMjGZUILwryqtO/mNvcUs+XT0G7g5g/liEMGTVm5/FX94hPOWZ6+5bPSw=)
-    username: ENC(eBLwEkin0S2m2JULNwz4c/qBM4EWrmM7JLgBJCK28fXSfKZXE1Tfe3fLBEXBOCKC)
-    password: ENC(DBKQ6eqINNvytuB0DCkd9DS50bWV6z32/f220NKtZRAb6MXH578HNfIEaq5RvMe4)
+    #driverClassName: com.mysql.cj.jdbc.Driver
+    driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+
+    url: ENC(lJB37BexfWEWTuHHwJYj7kn6r0WkgAvMf9C/2pWkylcV6N2DTgXEgrMbuKSvCkXNw4vnhJ4tmrjot5b/ggxc3t0XRug8cHnEYGDUK0Tm/zJEbYoqwoOi4ia07/Zx3tUjMd2wkv107Uw+QeHdgDq6GwUXW8O9miPvoj+sdElD6Hk=)
+    username: ENC(jFECT47C9/Ow8xN3V9rSK2+xmA6HssWwyvlVf3XK5U5GMMAea1ZFhCSlSNKrvsX8)
+    password: ENC(GjNvvy/iz9OIGBOqGn+xK9zWOnHcLzXl1D2FeqKyxBAUESz+zngPbxiDjUpf6sS0)
+
+#    url: ENC(FFKeg6WA/NpWyEjY7eM98K95aQpfMj8fmDGtVJTUsPg8Kac0dFH7L+H9XTkQjWgNqXnDuFqJrOmV0VDPHeHB1oCl6v5JMRc4c+c3NW6hDvQH7QgaNZCMjGZUILwryqtO/mNvcUs+XT0G7g5g/liEMGTVm5/FX94hPOWZ6+5bPSw=)
+#    username: ENC(eBLwEkin0S2m2JULNwz4c/qBM4EWrmM7JLgBJCK28fXSfKZXE1Tfe3fLBEXBOCKC)
+#    password: ENC(DBKQ6eqINNvytuB0DCkd9DS50bWV6z32/f220NKtZRAb6MXH578HNfIEaq5RvMe4)
+
 #    url: ENC(GRQHOFovtdi+HUtrZG+5P20ng6vVItiCzwKXiSPgsSgr/TJFSCLUNZQG1lHewyn4YY4scZmCDrrW2jRJFX6hYuZ5x7yUq8LTSANWlN5LUWv5Q44SYBrAG/+9GA01vAzp)
 #    username: ENC(IsFUZMUfwmuDfqbl8MI8Cw==)
 #    password: ENC(bthE1smfcNDXzmEmKMxBc6l7dGW7AXiE)
